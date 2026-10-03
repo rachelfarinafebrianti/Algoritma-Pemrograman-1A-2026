@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="jawaban 1"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 07:51:36 PM"/>
+        <attribute name="created" value="QVNVUztHQVJULVNTRDsyMDI2LTA5LTI5OzEwOjQxOjM3IFBNOzIxODc="/>
+        <attribute name="edited" value="QVNVUztHQVJULVNTRDsyMDI2LTEwLTAxOzA3OjUxOjM2IFBNOzQ7MjI4Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="uang, buku, pulpen, flashdisk, total, setelahDiskon, totalBayar, kembalian" type="Integer" array="False" size=""/>
+            <declare name="diskon, pajak" type="Real" array="False" size=""/>
+            <assign variable="uang" expression="200000"/>
+            <assign variable="buku" expression="3 * 25000"/>
+            <assign variable="pulpen" expression="2 * 8000"/>
+            <assign variable="flashdisk" expression="1 * 75000"/>
+            <assign variable="total" expression="buku + pulpen + flashdisk"/>
+            <assign variable="diskon" expression="total * 0.1"/>
+            <assign variable="setelahDiskon" expression="total - diskon"/>
+            <assign variable="pajak" expression="buku * 0.11"/>
+            <assign variable="totalBayar" expression="setelahDiskon + pajak"/>
+            <assign variable="kembalian" expression="uang - totalBayar"/>
+            <output expression="&quot;a) Total harga buku: Rp&quot; &amp; buku" newline="True"/>
+            <output expression="&quot;b) Total harga pulpen: Rp&quot; &amp; pulpen" newline="True"/>
+            <output expression="&quot;c) Total harga flashdisk: Rp&quot; &amp; flashdisk" newline="True"/>
+            <output expression="&quot;d) Total harga sebelum diskon: Rp&quot; &amp; total" newline="True"/>
+            <output expression="&quot;e) Diskon: Rp&quot; &amp; diskon" newline="True"/>
+            <output expression="&quot;f) Harga setelah diskon: Rp&quot; &amp; setelahDiskon" newline="True"/>
+            <output expression="&quot;g) Pajak: Rp&quot; &amp; pajak" newline="True"/>
+            <output expression="&quot;h) Total pembayaran: Rp&quot; &amp; totalBayar" newline="True"/>
+            <output expression="&quot;i) Uang kembalian: Rp&quot; &amp; kembalian" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
